@@ -3,5 +3,65 @@ body {
 }
 
 #shippingAddress {
-    display: show;
+    display: block;
+}
+
+form {
+    border-radius: 25px;
+    background-color: white;
+    margin-left: 20vh;
+    margin-left: 20%;
+    margin-right: 20vh;
+    margin-right: 20%;
+    margin-top: 5vh;
+    margin-top: 5%;
+    margin-bottom: 20vh;
+    margin-bottom: 20%;
+}
+
+#box {
+    padding-left: 2vh;
+    padding-left: 2%;
+    padding-top: 0.5vh;
+    padding-top: 0.5%;
+    padding-bottom: 0.5vh;
+    padding-bottom: 0.5%;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 150;
+}
+
+h2, label, input { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+#two-in-outer-box {
+    width: 100%;
+    display: inline-flex;
+}
+
+#inner-box-left {
+    width: 25%;
+}
+
+#inner-box-right {
+    margin-left: 4vh;
+    margin-left: 4%;
+    width: 25%;
+}
+
+#outer-box {
+    width: 74%;
+}
+
+#username {
+    width: 34.2%;
+}
+
+#fname, #lname {
+    width: 100%
 }
