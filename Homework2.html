@@ -6,12 +6,15 @@
 </head>
 
 <body>
+  <script src="Homework2.js"></script>
   <div id="box">
     <h1>My Shopping Cart</h1>
     <div>
       <h2>Billing Address</h2>
+      <input type="checkbox" id="addressCheck" name="addressCheck" onclick="displayShippingAddress()">
+      <label for="addressCheck"> Shipping adress is the same as billing address</label><br>
     </div>
-    <div>
+    <div id="shippingAddressBox">
       <h2>Shipping Address</h2>
     </div>
     <div>
