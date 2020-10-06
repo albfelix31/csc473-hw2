@@ -18,3 +18,19 @@ function displayShippingAddress() {
       shippingAddress.style.display = 'none';
     }
   }
+
+  function validate() {
+    var msg= "", fields = document.getElementById("checkout").getElementsByTagName("input");
+
+    for (var i=0; i < fields.length; i++){
+      if (fields[i].value == "") 
+        msg += fields[i].title + ' is required. \n';
+    }
+
+    if(msg) {
+      alert(msg);
+      return false;
+    }
+    else
+      return true;
+}

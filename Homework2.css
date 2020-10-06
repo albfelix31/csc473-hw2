@@ -117,3 +117,12 @@ h2, label, input {
 #xs-box-left {
     margin-right: 2%;
 }
+
+button {
+    width: 90%;
+}
+
+hr {
+    width: 90%;
+    margin-left: 0%;
+}

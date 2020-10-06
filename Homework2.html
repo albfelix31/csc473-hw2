@@ -10,8 +10,8 @@
 
 <body>
   <script src="Homework2.js"></script>
-  <form>
-    <div id="checkout-form">
+  <form id="checkout">
+    <div id="checkout-form" onsubmit="validate()">
       <h1>Checkout</h1>
       <div>
         <h2>Billing Address</h2>
@@ -19,11 +19,11 @@
         <div class="form-group" id="two-in-outer-box">
           <div id="inner-box-left"> 
             <label for="fname">First name</label>
-            <input type="text" class="form-control" id="fname" placeholder="John">
+            <input type="text" class="form-control" id="fname" placeholder="John" required>
           </div>
           <div id="inner-box-right">
             <label for="lname">Last name</label>
-            <input type="text" class="form-control" id="lname" placeholder="Doe">
+            <input type="text" class="form-control" id="lname" placeholder="Doe" required>
           </div>
         </div>
 
@@ -371,6 +371,7 @@
             <label class="custom-control-label" for="saveForLater">Save information for next time</label>
           </div>
         </div>
+        <hr>
       </div>
       <div id="shippingAddressBox">
 
@@ -720,7 +721,7 @@
             <input type="text" class="form-control" id="zipcode" placeholder="12345">
           </div>
         </div>
-        
+        <hr>
       </div>
       <div>
         <h2>Payment</h2>
@@ -768,6 +769,8 @@
             <input type="text" class="form-control" id="cvv" name="cvv">
           </div>
         </div>
+        <hr>
+        <button type="submit" class="btn btn-primary" id="bal">Continue to Checkout</button>
       </div>
     </div>
     <div id="shopping-cart">
