@@ -761,8 +761,48 @@
 
         <div class="form-group" id="two-in-outer-box">
           <div id="xs-box-left">
-            <label for="expirationdate">Expiration date</label>
-            <input type="text" class="form-control" id="expirationdate" name="expirationdate">
+            <div id="expirationDateLabel">
+              <label class="my-1 mr-2" for="expirationDate">Expiration Date</label>
+            </div>
+            <div>
+              <select class="custom-select my-1 mr-sm-2 form-control" id="expirationDate">
+                <option selected>Month</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <medium for="expirationDate" id="/" class="text-muted">/</medium>
+              <select class="custom-select my-1 mr-sm-2 form-control" id="expirationDate">
+                <option selected>Year</option>
+                <option value="15">2015</option>
+                <option value="16">2016</option>
+                <option value="17">2017</option>
+                <option value="18">2018</option>
+                <option value="19">2019</option>
+                <option value="20">2020</option>
+                <option value="21">2021</option>
+                <option value="22">2022</option>
+                <option value="23">2023</option>
+                <option value="24">2024</option>
+                <option value="25">2025</option>
+                <option value="26">2026</option>
+                <option value="27">2027</option>
+                <option value="28">2028</option>
+                <option value="29">2029</option>
+                <option value="30">2030</option>
+                <option value="31">2031</option>
+                <option value="32">2032</option>
+              </select>
+            </div>
           </div>
           <div id="xs-box-right">
             <label for="cvv">CVV:</label>

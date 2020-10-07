@@ -114,6 +114,7 @@ h2, label, input, p {
 
 #xs-box-left {
     margin-right: 2%;
+    width: 44%;
 }
 
 button {
@@ -178,4 +179,8 @@ p {
     margin-top: 0;
     padding-top: 0;
     display: flex;
+}
+
+#xs-box-left select {
+    width: 107px;
 }
