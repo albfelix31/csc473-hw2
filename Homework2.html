@@ -10,7 +10,7 @@
 
 <body>
   <script src="Homework2.js"></script>
-  <form id="checkout">
+  <form id="checkout" class="needs-validation" novalidate>
     <div id="checkout-form" onsubmit="validate()">
       <h1>Checkout</h1>
       <div>
@@ -20,21 +20,34 @@
           <div id="inner-box-left"> 
             <label for="fname">First name</label>
             <input type="text" class="form-control" id="fname" placeholder="John" required>
+            <div class="invalid-feedback">
+              Please write your first name.
+            </div>
           </div>
           <div id="inner-box-right">
             <label for="lname">Last name</label>
             <input type="text" class="form-control" id="lname" placeholder="Doe" required>
+            <div class="invalid-feedback">
+              Please write your last name.
+            </div>
           </div>
         </div>
 
         <div class="form-group" id="outer-box">
           <label for="email">Email address</label> 
+          <label for="email" id="optional" class="text-muted">(Optional)</label>
           <input type="email" class="form-control" id="email" placeholder="john.doe@email.com">
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
         </div>
 
         <div class="form-group" id="outer-box">
           <label for="address">Address</label> 
-          <input type="text" class="form-control" id="addres" placeholder="123 Main St">
+          <input type="text" class="form-control" id="addres" placeholder="123 Main St" required>
+          <div class="invalid-feedback">
+            Please write your address.
+          </div>
         </div>
 
         <div class="form-group" id="outer-box">
@@ -45,9 +58,9 @@
         
         <div class="form-group" id="box-3">
           <div id="left-box">
-            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Country</label>
-            <select class="custom-select my-1 mr-sm-2 form-control" id="inlineFormCustomSelectPref">
-              <option selected>Choose</option>
+            <label class="my-1 mr-2" for="country">Country</label>
+            <select class="custom-select my-1 mr-sm-2 form-control" id="country" required>
+              <option value="">Choose</option>
               <option value="Afganistan">Afghanistan</option>
               <option value="Albania">Albania</option>
               <option value="Algeria">Algeria</option>
@@ -295,12 +308,15 @@
               <option value="Zambia">Zambia</option>
               <option value="Zimbabwe">Zimbabwe</option>
             </select>
+            <div class="invalid-feedback">
+              Please choose the country where you reside.
+            </div>
           </div>
 
           <div id="middle-box">
-            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">State</label>
-            <select class="custom-select my-1 mr-sm-2 form-control" id="inlineFormCustomSelectPref">
-              <option selected>Choose</option>
+            <label class="my-1 mr-2" for="state">State</label>
+            <select class="custom-select my-1 mr-sm-2 form-control" id="state" required>
+              <option value="">Choose</option>
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AZ">Arizona</option>
@@ -353,11 +369,17 @@
               <option value="WI">Wisconsin</option>
               <option value="WY">Wyoming</option>
             </select>
+            <div class="invalid-feedback">
+              Please choose the state where you reside.
+            </div>
           </div>
 
           <div id="right-box">
             <label for="zipcode">Zipcode</label> 
-            <input type="text" class="form-control" id="zipcode" placeholder="12345">
+            <input type="text" class="form-control" id="zipcode" placeholder="12345" required>
+            <div class="invalid-feedback">
+              Please write your zipcode.
+            </div>
           </div>
         </div>
 
@@ -380,22 +402,34 @@
         <div class="form-group" id="two-in-outer-box">
           <div id="inner-box-left"> 
             <label for="fname">First name</label>
-            <input type="text" class="form-control" id="fname" placeholder="John">
+            <input type="text" class="form-control" id="fname" placeholder="John" required>
+            <div class="invalid-feedback">
+              Please write your first name.
+            </div>
           </div>
           <div id="inner-box-right">
             <label for="lname">Last name</label>
-            <input type="text" class="form-control" id="lname" placeholder="Doe">
+            <input type="text" class="form-control" id="lname" placeholder="Doe" required>
+            <div class="invalid-feedback">
+              Please write your last name.
+            </div>
           </div>
         </div>
 
         <div class="form-group" id="outer-box">
           <label for="email">Email address</label> 
           <input type="email" class="form-control" id="email" placeholder="john.doe@email.com">
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
         </div>
 
         <div class="form-group" id="outer-box">
           <label for="address">Address</label> 
-          <input type="text" class="form-control" id="addres" placeholder="123 Main St">
+          <input type="text" class="form-control" id="addres" placeholder="123 Main St" required>
+          <div class="invalid-feedback">
+            Please write your address.
+          </div>
         </div>
 
         <div class="form-group" id="outer-box">
@@ -407,8 +441,8 @@
         <div class="form-group" id="box-3">
           <div id="left-box">
             <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Country</label>
-            <select class="custom-select my-1 mr-sm-2 form-control" id="inlineFormCustomSelectPref">
-              <option selected>Choose</option>
+            <select class="custom-select my-1 mr-sm-2 form-control" id="inlineFormCustomSelectPref" required>
+              <option value="">Choose</option>
               <option value="Afganistan">Afghanistan</option>
               <option value="Albania">Albania</option>
               <option value="Algeria">Algeria</option>
@@ -656,12 +690,15 @@
               <option value="Zambia">Zambia</option>
               <option value="Zimbabwe">Zimbabwe</option>
             </select>
+            <div class="invalid-feedback">
+              Please choose the country where you reside.
+            </div>
           </div>
 
           <div id="middle-box">
             <label class="my-1 mr-2" for="inlineFormCustomSelectPref">State</label>
-            <select class="custom-select my-1 mr-sm-2 form-control" id="inlineFormCustomSelectPref">
-              <option selected>Choose</option>
+            <select class="custom-select my-1 mr-sm-2 form-control" id="inlineFormCustomSelectPref" required>
+              <option value="">Choose</option>
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AZ">Arizona</option>
@@ -714,11 +751,17 @@
               <option value="WI">Wisconsin</option>
               <option value="WY">Wyoming</option>
             </select>
+            <div class="invalid-feedback">
+              Please choose the state where you reside.
+            </div>
           </div>
 
           <div id="right-box">
             <label for="zipcode">Zipcode</label> 
-            <input type="text" class="form-control" id="zipcode" placeholder="12345">
+            <input type="text" class="form-control" id="zipcode" placeholder="12345" required>
+            <div class="invalid-feedback">
+              Please write your zipcode.
+            </div>
           </div>
         </div>
         <hr>
@@ -728,19 +771,19 @@
 
         <div class="form-group" id="radio-checks">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="payment" id="debit" value="option1">
+            <input class="form-check-input" type="radio" name="payment" id="debit" value="option1" required>
             <label class="form-check-label" for="debit">
               Debit
             </label>
           </div>
           <div class="form-check" id="middle-option">
-            <input class="form-check-input" type="radio" name="payment" id="credit" value="option2">
+            <input class="form-check-input" type="radio" name="payment" id="credit" value="option2" required>
             <label class="form-check-label" for="credit">
               Credit
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="payment" id="paypal" value="option3">
+            <input class="form-check-input" type="radio" name="payment" id="paypal" value="option3" required>
             <label class="form-check-label" for="paypal">
               Paypal
             </label>
@@ -750,12 +793,18 @@
         <div class="form-group" id="two-in-outer-box">
           <div id="inner-box-left"> 
             <label for="cardname">Name on card</label>
-            <input type="text" class="form-control" id="cardname">
+            <input type="text" class="form-control" id="cardname" required>
             <small id="emailHelp" class="form-text text-muted">Full name as displayed on card</small>
+            <div class="invalid-feedback">
+              Please write the name on card.
+            </div>
           </div>
           <div id="inner-box-right">
             <label for="cardnumber">Card number</label>
-            <input type="text" class="form-control" id="cardnumber">
+            <input type="text" class="form-control" id="cardnumber" required>
+            <div class="invalid-feedback">
+              Please write the card number.
+            </div>
           </div>
         </div>
 
@@ -765,8 +814,8 @@
               <label class="my-1 mr-2" for="expirationDate">Expiration Date</label>
             </div>
             <div>
-              <select class="custom-select my-1 mr-sm-2 form-control" id="expirationDate">
-                <option selected>Month</option>
+              <select class="custom-select my-1 mr-sm-2 form-control" id="expirationDate" required>
+                <option value="">Month</option>
                 <option value="01">01</option>
                 <option value="02">02</option>
                 <option value="03">03</option>
@@ -781,8 +830,8 @@
                 <option value="12">12</option>
               </select>
               <medium for="expirationDate" id="/" class="text-muted">/</medium>
-              <select class="custom-select my-1 mr-sm-2 form-control" id="expirationDate">
-                <option selected>Year</option>
+              <select class="custom-select my-1 mr-sm-2 form-control" id="expirationDate" required>
+                <option value="">Year</option>
                 <option value="15">2015</option>
                 <option value="16">2016</option>
                 <option value="17">2017</option>
@@ -802,11 +851,17 @@
                 <option value="31">2031</option>
                 <option value="32">2032</option>
               </select>
+              <div class="invalid-feedback">
+                Please input a valid expiration date.
+              </div>
             </div>
           </div>
           <div id="xs-box-right">
             <label for="cvv">CVV:</label>
-            <input type="text" class="form-control" id="cvv" name="cvv">
+            <input type="text" class="form-control" id="cvv" name="cvv" required>
+            <div class="invalid-feedback">
+              Please write the card security code (on back).
+            </div>
           </div>
         </div>
         <hr>
@@ -869,5 +924,26 @@
       </div>
     </div>
   </form>
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
 </body>
 </html>
