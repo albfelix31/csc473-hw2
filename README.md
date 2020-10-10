@@ -4,6 +4,7 @@
 
 ### Instructions
 Build a checkout form. See this link as an [example](https://getbootstrap.com/docs/4.0/examples/checkout/). You should have a:
+
 [X] Billing address section
 [X] Shipping address section
 [X] Payment section
